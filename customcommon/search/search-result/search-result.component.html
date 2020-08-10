@@ -1,0 +1,17 @@
+<h1>
+    search result
+  </h1>
+  
+  <mat-divider></mat-divider>
+  <mat-card *ngFor="let resort of searchResult;let i=index">
+      <mat-card-header>
+          <mat-card-title>{{resort.name }}</mat-card-title>
+      </mat-card-header>
+     
+      <div>
+        {{resort.cuisine}}
+      </div>
+      <div>
+        {{resort.address}}
+      </div>
+  </mat-card>

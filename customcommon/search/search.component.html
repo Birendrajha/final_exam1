@@ -1,0 +1,26 @@
+
+<form [formGroup]='resortForm'(submit)="find()">
+
+  
+      <mat-form-field class="example-full-width">
+          <mat-label> enter longitude</mat-label>
+          <input matInput placeholder=" longitude" formControlName="long" >
+        </mat-form-field>
+     
+        <mat-form-field class="example-full-width">
+          <mat-label> enter latitude</mat-label>
+          <input matInput placeholder=" latitude" formControlName="lat" >
+        </mat-form-field>
+
+      
+
+
+        
+      <div>
+        <button [disabled]="resortForm.invalid" type="submit" mat-raised-button colour="primary" >find</button>
+        
+    </div>
+
+</form> 
+
+<app-search-result [searchResult]="resort"></app-search-result>
